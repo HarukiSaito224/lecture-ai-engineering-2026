@@ -82,7 +82,7 @@ def get_lecture_summary(lecture: int) -> str:
 
 def make_quiz(lecture: int) -> str:
     """指定された回の用語集から確認問題をランダムに1問作り、問題と答えを出力する。
-
+    
     「第2回の確認問題を生成して」のように復習用の問題を求められたときに使う。
     """
     candidates = [term for term in load_glossary() if term["lecture"] == lecture]
